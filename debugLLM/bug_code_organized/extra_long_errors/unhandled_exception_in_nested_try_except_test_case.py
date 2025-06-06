@@ -1,0 +1,1 @@
+process_data([1, 0, 'a', 5])

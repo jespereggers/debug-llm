@@ -1,0 +1,1 @@
+process_files(['nonexistent1.txt', 'nonexistent2.txt'])

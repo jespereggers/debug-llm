@@ -1,0 +1,1 @@
+from list_index_out_of_range import buggy_function; buggy_function()

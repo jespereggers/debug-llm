@@ -1,0 +1,11 @@
+Filename,Directory,Time Taken (s),Has Errors
+logicalError.js,../bugsTestCases/short_bugs,2.883,true
+runTimeError.js,../bugsTestCases/short_bugs,1.672,false
+singleLineError.js,../bugsTestCases/short_bugs,1.726,true
+typeError.js,../bugsTestCases/short_bugs,2.575,false
+arrayManipulationError.js,../bugsTestCases/medium_bugs,2.429,true
+logicError.js,../bugsTestCases/medium_bugs,2.704,true
+moduleError.js,../bugsTestCases/medium_bugs,2.6,true
+objectPropertyAccessError.js,../bugsTestCases/medium_bugs,1.545,true
+nestedFunctionCallErrorHandling.js,../bugsTestCases/long_bugs,2.848,true
+objectPropertyAccess.js,../bugsTestCases/long_bugs,2.799,true

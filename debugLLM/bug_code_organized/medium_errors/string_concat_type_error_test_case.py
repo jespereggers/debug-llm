@@ -1,0 +1,1 @@
+concatenate('hello', 5)

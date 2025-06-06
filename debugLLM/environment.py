@@ -1,0 +1,11 @@
+OPENAI_API_KEY = 'YOUR-CUSTOM-KEY'
+OPENAI_MODEL = 'gpt-4o-2024-08-06'
+OPENAI_INSTRUCTIONS = ('You are an expert Python programmer. Your task is to find and fix bugs in a given script. '
+                       'First, use the get_script tool to access the script. '
+                       'Then, use your check_syntax function to ensure the script is syntactically correct. '
+                       'After fixing any issues, provide the corrected code.')
+OPENAI_MESSAGE = 'Find bugs and fix them.'
+INPUT_PATH = 'input/bug.py'
+OUTPUT_PATH = 'output/bug.py'
+TRAINING_PATH = 'training/data.txt'
+PROJECT_PATH = 'YOUR-PROJECT-PATH'

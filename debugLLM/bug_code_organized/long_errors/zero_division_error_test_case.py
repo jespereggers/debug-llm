@@ -1,0 +1,1 @@
+from zero_division_error import buggy_function; buggy_function()

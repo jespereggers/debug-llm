@@ -1,0 +1,101 @@
+Bug Type,Bug Name,Bug Fixed,Time Taken (s),Test Result
+complicated_errors,incorrect_use_of_mutable_default_argument,True,4.4179,Pass
+complicated_errors,mishandling_of_multiple_exceptions,True,1.2816,Pass
+complicated_errors,unhandled_index_error,True,1.7993,Pass
+complicated_errors,unoptimized_loop_in_large_dataset,True,1.4487,Pass
+complicated_errors,missing_context_manager_for_file,False,1.0242,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 7, in <module>
+    print(read_file(""example.txt""))
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 3, in read_file
+    with open(file_path, ""r"") as file:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'example.txt'"
+complicated_errors,incorrect_inheritance_hierarchy,True,1.9378,Pass
+complicated_errors,recursive_function_stack_overflow,True,1.376,Pass
+complicated_errors,incorrect_class_variable_usage,True,1.2796,Pass
+complicated_errors,unnecessary_use_of_global,False,0.6806,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+TypeError: increment() missing 1 required positional argument: 'c'"
+complicated_errors,division_by_zero_in_loop,False,1.698,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 4, in divide_numbers
+    raise ValueError(""Divisor cannot be zero."")
+ValueError: Divisor cannot be zero."
+long_errors,nested_function_exception,True,1.0837,Pass
+long_errors,key_error_in_dict,True,0.8752,Pass
+long_errors,incorrect_string_format,True,0.6702,Pass
+long_errors,file_handling_error,False,0.5835,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 3, in read_file
+    with open(filename, ""r"") as f:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'nonexistent.txt'"
+long_errors,file_not_closed,False,0.702,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 3, in read_data
+    with open(file_path, 'r') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'non_existent.txt'"
+long_errors,list_modification_during_iteration,True,0.6649,Pass
+long_errors,division_by_zero_in_thread,True,1.2977,Pass
+long_errors,missing_nonlocal,True,0.9722,Pass
+long_errors,memory_leak_due_to_global_list,True,1.0959,Pass
+long_errors,infinite_loop,True,0.6775,Pass
+long_errors,regular_expression_error,True,1.29,Pass
+long_errors,zero_division_error,False,0.6156,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+ModuleNotFoundError: No module named 'zero_division_error'"
+long_errors,unhandled_unicode_error,True,0.935,Pass
+long_errors,incorrect_sort_lambda,True,1.1863,Pass
+long_errors,list_index_out_of_range,False,0.5724,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+ModuleNotFoundError: No module named 'list_index_out_of_range'"
+long_errors,socket_connection_leak,False,1.3652,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 13, in <module>
+    connect_to_server()
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 7, in connect_to_server
+    s.connect(('localhost', 8080))
+ConnectionRefusedError: [Errno 61] Connection refused"
+long_errors,recursive_factorial,True,1.1069,Pass
+long_errors,nested_function_scope,True,0.7751,Pass
+long_errors,lambda_scope_error,True,0.7732,Pass
+long_errors,missing_variable_in_recursive,True,1.1894,Pass
+extra_long_errors,recursive_data_processing,True,2.0374,Pass
+extra_long_errors,deeply_nested_if_else_conditions,True,2.8931,Pass
+extra_long_errors,recursive_class_method_error,True,2.0057,Pass
+extra_long_errors,unhandled_exception_in_nested_try_except,True,1.4921,Pass
+extra_long_errors,nested_loop_with_break_continue_errors,True,2.0092,Pass
+extra_long_errors,multithreading_data_race,True,1.4067,Pass
+extra_long_errors,complex_class_hierarchy_with_attribute_error,True,2.6157,Pass
+extra_long_errors,incorrect_class_inheritance_with_method_override,True,2.21,Pass
+extra_long_errors,improper_closure_use_with_lambdas,True,1.2713,Pass
+extra_long_errors,complex_file_handling_and_resource_leak,True,2.03,Pass
+medium_errors,key_error_in_dict,True,0.8444,Pass
+medium_errors,wrong_usage_of_sorted,True,0.8851,Pass
+medium_errors,zero_division_in_lambda,True,0.6693,Pass
+medium_errors,logical_error_in_comparison,True,1.2881,Pass
+medium_errors,attribute_error_in_list,True,0.9489,Pass
+medium_errors,incorrect_substring_index,True,0.8838,Pass
+medium_errors,value_error_in_int_conversion,True,0.8188,Pass
+medium_errors,improper_exception_handling,True,1.0851,Pass
+medium_errors,infinite_recursion,True,1.0044,Pass
+medium_errors,missing_argument,False,0.8261,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+TypeError: multiply() missing 1 required positional argument: 'b'"
+medium_errors,memory_leak_in_loop,True,1.2248,Pass
+medium_errors,incorrect_file_open_mode,True,0.7686,Pass
+medium_errors,unused_variable_warning,True,0.5366,Pass
+medium_errors,type_error_in_addition,True,0.6158,Pass
+medium_errors,set_attribute_error,False,0.7196,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+AttributeError: 'MyClass' object has no attribute 'non_existing_attribute'"
+medium_errors,missing_key_in_format,True,0.6549,Pass
+medium_errors,name_error,True,0.459,Pass
+medium_errors,reference_error_in_function,False,1.1695,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+TypeError: add_numbers() missing 2 required positional arguments: 'a' and 'b'"
+medium_errors,string_concat_type_error,True,0.6867,Pass
+medium_errors,index_error_in_loop,True,0.9317,Pass

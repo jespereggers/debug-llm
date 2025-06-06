@@ -1,0 +1,1 @@
+divide_numbers(10, 0)

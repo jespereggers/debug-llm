@@ -1,0 +1,1 @@
+read_data('non_existent.txt')

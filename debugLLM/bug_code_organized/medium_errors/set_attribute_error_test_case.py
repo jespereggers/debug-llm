@@ -1,0 +1,1 @@
+MyClass().non_existing_attribute

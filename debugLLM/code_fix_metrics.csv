@@ -1,0 +1,85 @@
+Bug Type,Bug Name,Bug Fixed,Time Taken (s),Test Result
+complicated_errors,incorrect_use_of_mutable_default_argument,True,1.6387,Pass
+complicated_errors,mishandling_of_multiple_exceptions,True,1.6281,Pass
+complicated_errors,unhandled_index_error,True,1.443,Pass
+complicated_errors,unoptimized_loop_in_large_dataset,True,1.1976,Pass
+complicated_errors,missing_context_manager_for_file,True,2.7764,Pass
+complicated_errors,incorrect_inheritance_hierarchy,True,1.7537,Pass
+complicated_errors,recursive_function_stack_overflow,True,1.1659,Pass
+complicated_errors,incorrect_class_variable_usage,True,4.0977,Pass
+complicated_errors,unnecessary_use_of_global,False,5.1618,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+TypeError: increment() missing 1 required positional argument: 'c'"
+complicated_errors,division_by_zero_in_loop,False,8.8086,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 4, in divide_numbers
+    raise ValueError(""Divisor cannot be zero."")
+ValueError: Divisor cannot be zero."
+long_errors,nested_function_exception,True,1.0935,Pass
+long_errors,key_error_in_dict,True,0.7862,Pass
+long_errors,incorrect_string_format,True,1.048,Pass
+long_errors,file_handling_error,True,1.7816,Pass
+long_errors,file_not_closed,True,2.0805,Pass
+long_errors,list_modification_during_iteration,True,0.9655,Pass
+long_errors,division_by_zero_in_thread,True,1.5856,Pass
+long_errors,missing_nonlocal,True,0.9992,Pass
+long_errors,memory_leak_due_to_global_list,True,1.1969,Pass
+long_errors,infinite_loop,True,0.8757,Pass
+long_errors,regular_expression_error,True,1.0276,Pass
+long_errors,zero_division_error,False,7.7783,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+ModuleNotFoundError: No module named 'zero_division_error'"
+long_errors,unhandled_unicode_error,True,1.066,Pass
+long_errors,incorrect_sort_lambda,True,6.9452,Pass
+long_errors,list_index_out_of_range,False,4.924,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+ModuleNotFoundError: No module named 'list_index_out_of_range'"
+long_errors,socket_connection_leak,True,4.3137,Pass
+long_errors,recursive_factorial,True,1.0242,Pass
+long_errors,nested_function_scope,True,2.6499,Pass
+long_errors,lambda_scope_error,True,1.448,Pass
+long_errors,missing_variable_in_recursive,True,1.7652,Pass
+extra_long_errors,recursive_data_processing,True,2.0643,Pass
+extra_long_errors,deeply_nested_if_else_conditions,True,2.5685,Pass
+extra_long_errors,recursive_class_method_error,True,2.4496,Pass
+extra_long_errors,unhandled_exception_in_nested_try_except,True,1.9367,Pass
+extra_long_errors,nested_loop_with_break_continue_errors,True,1.2865,Pass
+extra_long_errors,multithreading_data_race,True,1.6052,Pass
+extra_long_errors,complex_class_hierarchy_with_attribute_error,True,3.4213,Pass
+extra_long_errors,incorrect_class_inheritance_with_method_override,True,2.2355,Pass
+extra_long_errors,improper_closure_use_with_lambdas,True,1.2516,Pass
+extra_long_errors,complex_file_handling_and_resource_leak,True,2.0259,Pass
+medium_errors,key_error_in_dict,True,0.8943,Pass
+medium_errors,wrong_usage_of_sorted,True,0.8491,Pass
+medium_errors,zero_division_in_lambda,True,0.6999,Pass
+medium_errors,logical_error_in_comparison,True,0.8293,Pass
+medium_errors,attribute_error_in_list,True,1.0527,Pass
+medium_errors,incorrect_substring_index,True,1.1514,Pass
+medium_errors,value_error_in_int_conversion,True,1.218,Pass
+medium_errors,improper_exception_handling,True,0.9399,Pass
+medium_errors,infinite_recursion,False,5.7108,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 11, in infinite_recursion
+    return infinite_recursion(depth + 1, limit, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 11, in infinite_recursion
+    return infinite_recursion(depth + 1, limit, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/nitishgopinath/Documents/Github/24SS-DebugLLM/debugLLM/temp_code.py"", line 11, in infinite_recursion
+    return infinite_recursion(depth + 1, limit, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 996 more times]
+RecursionError: maximum recursion depth exceeded"
+medium_errors,missing_argument,True,1.7301,Pass
+medium_errors,memory_leak_in_loop,True,2.4304,Pass
+medium_errors,incorrect_file_open_mode,True,0.8902,Pass
+medium_errors,unused_variable_warning,True,0.5737,Pass
+medium_errors,type_error_in_addition,True,0.7331,Pass
+medium_errors,set_attribute_error,True,1.3497,Pass
+medium_errors,missing_key_in_format,True,0.769,Pass
+medium_errors,name_error,True,1.288,Pass
+medium_errors,reference_error_in_function,False,4.5524,"Fail: Traceback (most recent call last):
+  File ""<string>"", line 2, in <module>
+TypeError: add_numbers() missing 2 required positional arguments: 'a' and 'b'"
+medium_errors,string_concat_type_error,True,0.896,Pass
+medium_errors,index_error_in_loop,True,0.6871,Pass

@@ -1,0 +1,1 @@
+pass  # Run the generated functions and observe closure issue

@@ -1,0 +1,1 @@
+extract_emails('test@domain, another_test@domain.com')

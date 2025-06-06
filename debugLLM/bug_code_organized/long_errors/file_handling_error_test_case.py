@@ -1,0 +1,1 @@
+read_file('nonexistent.txt')

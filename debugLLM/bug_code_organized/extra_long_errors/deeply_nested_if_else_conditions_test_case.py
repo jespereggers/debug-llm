@@ -1,0 +1,1 @@
+for i in range(25): process_input(i)

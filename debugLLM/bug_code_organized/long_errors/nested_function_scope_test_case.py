@@ -1,0 +1,1 @@
+outer_function(10)
