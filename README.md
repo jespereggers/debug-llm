@@ -5,7 +5,7 @@ Modular built, expandable and located in `debugLLM`.
 
 #### Custom API Keys
 Depending on component to use, adding your custom key might be cruical:
-1. `debugLLMVsCodePlugin\src\llm\openAiConnector.ts`: fill-in for API-confi. 
+1. `debugLLMVsCodePlugin\src\llm\openAiConnector.ts`: fill-in for API-config. 
 2. `debugLLMVsCodePlugin\src\llm\openAssistConnector.ts`: fill-in for API-config. 
 3. `debugLLM\environment.py`: fill-in for all kind of configs, e.g. your project path.
 
